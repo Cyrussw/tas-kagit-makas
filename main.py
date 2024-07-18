@@ -7,28 +7,26 @@ user = input("TAŞ / KAĞIT / MAKAS: ").lower()
 
 if not user:
     print("Sistem: Lütfen bir seçenek giriniz.")
-elif (user in user_choice):
+elif user in user_choice:
     ai = random.choice(ai_choice)
     
-    if (ai == "taş" and user == "makas"):
-        print("Sistem: AI Kazandı!")
-    elif (ai == "taş" and user == "kağıt"):
-        print("Sistem: İnsan Kazandı!")
-    elif (ai == "taş" and user == "taş"):
-        print("Sistem: Berabere!")
-    elif (ai == "makas" and user == "taş"):
-        print("Sistem: İnsan Kazandı!")
-    elif (ai == "makas" and user == "kağıt"):
-        print("Sistem: AI Kazandı!")
-    elif (ai == "makas" and user == "makas"):
-        print("Sistem: Berabere!")
-    elif (ai == "kağıt" and user == "taş"):
-        print("Sistem: AI Kazandı!")
-    elif (ai == "kağıt" and user == "makas"):
-        print("Sistem: İnsan Kazandı!")
-    elif (ai == "kağıt" and user == "kağıt"):
-        print("Sistem: Berabere!")
-    else:
-        print("HATA!")
+    if ai == "taş" and user == "makas":
+        print(f"Sistem: AI Kazandı! (AI: {ai} - İnsan: {user})")
+    elif ai == "taş" and user == "kağıt":
+        print(f"Sistem: İnsan Kazandı! (AI: {ai} - İnsan: {user})")
+    elif ai == "taş" and user == "taş":
+        print(f"Sistem: Berabere! (AI: {ai} - İnsan: {user})")
+    elif ai == "makas" and user == "taş":
+        print(f"Sistem: İnsan Kazandı! (AI: {ai} - İnsan: {user})")
+    elif ai == "makas" and user == "kağıt":
+        print(f"Sistem: AI Kazandı! (AI: {ai} - İnsan: {user})")
+    elif ai == "makas" and user == "makas":
+        print(f"Sistem: Berabere! (AI: {ai} - İnsan: {user})")
+    elif ai == "kağıt" and user == "taş":
+        print(f"Sistem: AI Kazandı! (AI: {ai} - İnsan: {user})")
+    elif ai == "kağıt" and user == "makas":
+        print(f"Sistem: İnsan Kazandı! (AI: {ai} - İnsan: {user})")
+    elif ai == "kağıt" and user == "kağıt":
+        print(f"Sistem: Berabere! (AI: {ai} - İnsan: {user})")
 else:
     print("Sistem: Lütfen sadece TAŞ / KAĞIT / MAKAS seçeneklerinden bir tanesini kullanın!")
